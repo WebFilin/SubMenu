@@ -1,0 +1,9 @@
+.autocomplete_items {
+  padding: 5px;
+}
+
+.autocomplete_items:hover {
+  background: rgb(169, 176, 176);
+  cursor: pointer;
+  transition: 200ms;
+}

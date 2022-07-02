@@ -1,0 +1,10 @@
+.wrapper {
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.item {
+  padding: 5px 5px;
+  margin: 3px 0px;
+  font-size: 1em;
+}

@@ -1,0 +1,96 @@
+.wrapper {
+  width: 30vw;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid grey;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper_active {
+  width: 30vw;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid grey;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.body > h3 {
+  color: rgb(20, 83, 218);
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    width: 40vw;
+  }
+
+  .wrapper_active {
+    width: 40vw;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .wrapper {
+    width: 60vw;
+  }
+
+  .wrapper_active {
+    width: 60vw;
+  }
+}
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90vw;
+  }
+
+  .wrapper_active {
+    width: 90vw;
+  }
+}
+/* Iphone 5 */
+@media (max-width: 320px) {
+  .wrapper {
+    width: 90vw;
+  }
+
+  .wrapper_active {
+    width: 90vw;
+  }
+}

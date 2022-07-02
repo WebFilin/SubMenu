@@ -1,0 +1,76 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.body {
+  width: 100%;
+  padding: 5px 10px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.input_wrapper {
+  width: 100%;
+  height: auto;
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.input {
+  width: 90%;
+  height: 16px;
+  resize: none;
+  overflow: hidden;
+  padding: 0px 5px;
+}
+
+.input_wrapper:hover {
+  border: 1px solid rgb(16, 156, 231);
+}
+
+.autocomplete {
+  position: absolute;
+  visibility: hidden;
+  left: 8px;
+  top: 35px;
+  width: 95%;
+  padding: 0px 10px;
+  font-size: 1em;
+  background: white;
+  max-height: 200px;
+  height: auto;
+  overflow: auto;
+  transition: 100ms;
+  z-index: 2;
+}
+
+.search_img {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background: url("../../images/39.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.input_wrapper + .autocomplete {
+  visibility: visible;
+}
+
+/* Large desktops and laptops */
+@media (max-width: 1420px) {
+  .input {
+    height: 38px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 700px) {
+  .input {
+    height: 38px;
+  }
+}
